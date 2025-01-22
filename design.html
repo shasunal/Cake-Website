@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sweet Creations</title>
+		<link rel="stylesheet" type = "text/css" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Danfo&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&family=Quicksand:wght@300..700&family=Rajdhani&family=Sixtyfour+Convergence&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Danfo&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&family=Quicksand:wght@300..700&family=Rajdhani&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Sixtyfour+Convergence&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+		<script src="script.js" defer></script>
+		<script src="slide.js" defer></script>
+		<script src="sprinkle.js" defer></script>
+	
+</head>
+
+<body>
+	<div class = "container">
+		<header>
+		<h1 class="float-header"> Design your own Cake </h1>
+		</header>
+		<nav >
+		<ul class="float-header">
+			<li><a href="index.html"><button class="button-74" role="button">Home</button></a></li>
+			<li><a href="about.html"><button class="button-74" role="button">About</button></a></li>
+			<li><a href="mailto:linshasuna@gmail.com?subject=Website Inquiry"><button class="button-74" role="button">Contact</button></a></p></li>
+			<li><a href="design.html"><button class="button-74" role="button">Design</button></a></li>
+			<li><button class="button-74" onclick="startSprinkleEffect()">Sprinkles</button>
+<div class="sprinkle-container"></div>
+</li>
+		</ul>
+	</nav>
+
+	<main >
+
+	
+<table style="width:100%; ">
+  <tr>
+    <th><div style="text-align: center; margin-top: 20px; margin-right: -400px;">
+        <button class="button-74" onclick="changeCakeColor()">Change Cake Color</button>
+    </div></th>
+    <th><div style="text-align: center; margin-top: 20px; margin-left:-400px;">
+         <button class="button-74" onclick="toggleCakeLayers()">Change Cake Layers</button>
+    </div></th>
+    
+  </tr>
+ 
+</table>
+
+		<div id ="left-container" class="container">
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top1" src = "./images/strawberry.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top2" src = "./images/blueberry.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top3" src = "./images/blackberry.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top4" src = "./images/candle.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top5" src = "./images/whiterose.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top6" src = "./images/pinkrose.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top7" src = "./images/rose.png" />
+			</div>
+		</div>
+
+		<div id="right-container" class="container">
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top8" src = "./images/frostingwhite.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top9" src = "./images/pinkfrosting.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top10" src = "./images/frostings.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top11" src = "./images/chocolatefrosting.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top12" src = "./images/pinkdrip.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top13" src = "./images/chocolatedrip.png" />
+			</div>
+			<div class = "topping">
+				<img class = "top" alt = "top" id ="top14" src = "./images/sprinkles.webp" />
+			</div>
+		</div>
+		
+		</div>
+		
+		
+
+
+		<div id = "base1">
+			<div class = "caketop" ></div>
+			<div class ="cakemiddle"></div>
+			<div class = "cakebottom"></div>
+
+<div id="caketop2" class="caketop2"></div>
+<div id="cakemiddle2" class="cakemiddle2"></div>
+<div id="cakebottom2" class="cakebottom2"></div>
+		</div>
+
+
+
+		</main>
+	
+
+
+<aside>
+
+<h2 style = "font-size: 40px;"> Submit your Order</h2>
+<br>
+<form action="/action_page.php">
+  <label for="fname">Let us know about any allergies or additional messages.</label><br>
+  <input type="text" id="fname" name="fname" value="" style="width: 400px; height: 200px;"><br>
+  <label for="lname">Name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="lname">Phone Number:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+   <label for="lname">Email:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="lname">Date:</label><br>
+  <input type="datetime-local" id="lname" name="lname" value=""><br>
+ 
+ <br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+</aside>
+	
+	
+	<footer>
+		<p>© 2024 Sweet Creations. All rights reserved.</p>
+	</footer>
+</div>
+
+
+</body>
+</html>
